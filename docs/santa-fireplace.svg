@@ -1,0 +1,229 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340" role="img" aria-labelledby="title">
+  <title id="title">Tomten vinkar bredvid en sprakande brasa</title>
+  <defs>
+    <clipPath id="frame"><rect width="480" height="340" rx="20"/></clipPath>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffb347" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#ffb347" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="paper" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M14 7l3 7-3 7-3-7z" fill="#faf4e8" opacity=".05"/>
+    </pattern>
+    <style>
+      .flame { transform-box: fill-box; transform-origin: 50% 100%; animation: flicker 1.6s ease-in-out infinite; }
+      .f2 { animation-duration: 1.2s; animation-delay: -.4s; }
+      .f3 { animation-duration: 1.9s; animation-delay: -.8s; }
+      .glow { animation: pulse 3.2s ease-in-out infinite; }
+      .wave { transform-box: fill-box; transform-origin: 18% 88%; animation: wave 2.6s ease-in-out infinite; }
+      .bulb { animation: twinkle 2.4s ease-in-out infinite; }
+      .b2 { animation-delay: -.8s; }
+      .b3 { animation-delay: -1.6s; }
+      @keyframes flicker { 0%, 100% { transform: scale(1, 1); } 30% { transform: scale(.94, 1.08); } 60% { transform: scale(1.04, .95); } }
+      @keyframes pulse { 0%, 100% { opacity: .8; } 50% { opacity: 1; } }
+      @keyframes wave { 0%, 55%, 100% { transform: rotate(0); } 18% { transform: rotate(-12deg); } 36% { transform: rotate(6deg); } }
+      @keyframes twinkle { 0%, 100% { opacity: 1; } 50% { opacity: .45; } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <!-- Wall -->
+    <rect width="480" height="340" fill="#24493a"/>
+    <rect width="480" height="340" fill="url(#paper)"/>
+    <ellipse class="glow" cx="355" cy="240" rx="200" ry="160" fill="url(#glow)"/>
+
+    <!-- String lights -->
+    <path d="M0 18Q120 48 240 22Q360 48 480 18" fill="none" stroke="#12291f" stroke-width="2"/>
+    <g>
+      <ellipse class="bulb" cx="24" cy="28" rx="3.2" ry="4.6" fill="#e04a3f"/>
+      <ellipse class="bulb b2" cx="72" cy="36" rx="3.2" ry="4.6" fill="#ffd166"/>
+      <ellipse class="bulb b3" cx="120" cy="39" rx="3.2" ry="4.6" fill="#faf4e8"/>
+      <ellipse class="bulb" cx="168" cy="37" rx="3.2" ry="4.6" fill="#e04a3f"/>
+      <ellipse class="bulb b2" cx="216" cy="31" rx="3.2" ry="4.6" fill="#ffd166"/>
+      <ellipse class="bulb b3" cx="264" cy="31" rx="3.2" ry="4.6" fill="#faf4e8"/>
+      <ellipse class="bulb" cx="312" cy="37" rx="3.2" ry="4.6" fill="#e04a3f"/>
+      <ellipse class="bulb b3" cx="408" cy="36" rx="3.2" ry="4.6" fill="#faf4e8"/>
+      <ellipse class="bulb" cx="456" cy="28" rx="3.2" ry="4.6" fill="#e04a3f"/>
+    </g>
+
+    <!-- Window with a snowy night -->
+    <rect x="32" y="44" width="108" height="122" rx="6" fill="#efe4cf"/>
+    <rect x="40" y="52" width="92" height="106" rx="3" fill="#10263a"/>
+    <circle cx="112" cy="74" r="9" fill="#faf4e8"/>
+    <circle cx="116.5" cy="70.5" r="8" fill="#10263a"/>
+    <g fill="#faf4e8">
+      <circle cx="50" cy="64" r="1.6"/>
+      <circle cx="66" cy="80" r="1.3"/>
+      <circle cx="58" cy="97" r="1.8"/>
+      <circle cx="77" cy="68" r="1.4"/>
+      <circle cx="98" cy="92" r="1.6"/>
+      <circle cx="122" cy="98" r="1.3"/>
+      <circle cx="104" cy="118" r="1.7"/>
+      <circle cx="126" cy="128" r="1.4"/>
+      <circle cx="73" cy="114" r="1.5"/>
+      <circle cx="47" cy="122" r="1.3"/>
+      <circle cx="95" cy="62" r="1.2"/>
+    </g>
+    <path d="M64 124L80 156H48Z" fill="#1a3a2c"/>
+    <path d="M64 124L70.5 137Q64 134 57.5 137Z" fill="#faf4e8"/>
+    <path d="M114 134L125 156H103Z" fill="#1a3a2c"/>
+    <path d="M114 134L118.5 143Q114 141 109.5 143Z" fill="#faf4e8"/>
+    <path d="M40 152Q60 144 86 150Q108 143 132 149V158H40Z" fill="#faf4e8"/>
+    <rect x="84" y="52" width="4" height="106" fill="#efe4cf"/>
+    <rect x="40" y="103" width="92" height="4" fill="#efe4cf"/>
+    <rect x="26" y="164" width="120" height="9" rx="3" fill="#d6c3a0"/>
+
+    <!-- Wreath -->
+    <path d="M355 36V76" stroke="#b3302b" stroke-width="3"/>
+    <circle cx="355" cy="100" r="22" fill="none" stroke="#2f6b4a" stroke-width="12"/>
+    <circle cx="355" cy="100" r="22" fill="none" stroke="#3f8a5f" stroke-width="12" stroke-dasharray="3 6"/>
+    <g fill="#d93a32">
+      <circle cx="336" cy="90" r="2.8"/>
+      <circle cx="372" cy="86" r="2.8"/>
+      <circle cx="376" cy="108" r="2.8"/>
+      <circle cx="342" cy="114" r="2.8"/>
+      <circle cx="356" cy="78" r="2.8"/>
+    </g>
+    <path d="M355 122l-11-7v14zM355 122l11-7v14z" fill="#b3302b"/>
+    <path d="M353 123l-6 13h5l3-9zM357 123l6 13h-5l-3-9z" fill="#8f231f"/>
+    <circle cx="355" cy="122" r="3.5" fill="#8f231f"/>
+
+    <!-- Floor -->
+    <rect y="284" width="480" height="8" fill="#1b3a2d"/>
+    <rect y="292" width="480" height="48" fill="#6e4a32"/>
+    <path d="M0 307H480M0 323H480M60 292V307M180 307V323M300 292V307M420 307V323M120 323V340M260 323V340M390 323V340" stroke="#5c3d29" stroke-width="2"/>
+    <ellipse class="glow" cx="355" cy="300" rx="130" ry="26" fill="url(#glow)"/>
+
+    <!-- Rug -->
+    <ellipse cx="180" cy="318" rx="140" ry="15" fill="#b3302b"/>
+    <ellipse cx="180" cy="318" rx="124" ry="10" fill="none" stroke="#faf4e8" stroke-width="2" stroke-dasharray="6 5" opacity=".8"/>
+
+    <!-- Fireplace -->
+    <rect x="272" y="156" width="166" height="132" fill="#ede1c8"/>
+    <g fill="#e0d1b2">
+      <rect x="318" y="166" width="26" height="9" rx="3"/>
+      <rect x="366" y="170" width="22" height="8" rx="3"/>
+      <rect x="392" y="165" width="18" height="9" rx="3"/>
+      <rect x="276" y="200" width="20" height="10" rx="3"/>
+      <rect x="279" y="230" width="16" height="10" rx="3"/>
+      <rect x="276" y="258" width="20" height="10" rx="3"/>
+      <rect x="414" y="204" width="18" height="10" rx="3"/>
+      <rect x="412" y="236" width="20" height="9" rx="3"/>
+      <rect x="415" y="262" width="17" height="10" rx="3"/>
+    </g>
+    <path d="M304 286V226Q304 192 355 192Q406 192 406 226V286Z" fill="#2a1913"/>
+    <path d="M304 286V226Q304 192 355 192Q406 192 406 226V286" fill="none" stroke="#d6c3a0" stroke-width="5"/>
+
+    <!-- Fire -->
+    <path class="flame" d="M355 274C333 262 336 236 350 214C352 230 360 232 362 220C376 238 380 262 355 274Z" fill="#f28c28"/>
+    <path class="flame f3" d="M338 274C326 266 328 250 336 240C338 250 344 252 346 246C352 258 350 270 338 274Z" fill="#e0582a"/>
+    <path class="flame f2" d="M374 274C364 268 365 254 371 246C374 254 379 255 380 250C386 260 385 270 374 274Z" fill="#f28c28"/>
+    <path class="flame f2" d="M355 274C344 268 345 252 352 240C354 250 359 251 361 245C368 256 366 270 355 274Z" fill="#ffd166"/>
+    <rect x="322" y="270" width="68" height="12" rx="6" fill="#7a4a2e"/>
+    <rect x="330" y="261" width="54" height="11" rx="5.5" fill="#8d5836" transform="rotate(-6 357 266)"/>
+    <circle cx="328" cy="276" r="5" fill="#c48d5c"/>
+    <circle cx="384" cy="276" r="5" fill="#c48d5c"/>
+    <rect x="262" y="286" width="186" height="10" rx="3" fill="#d6c3a0"/>
+
+    <!-- Mantel -->
+    <rect x="258" y="146" width="194" height="16" rx="3" fill="#8a5a3b"/>
+    <rect x="258" y="146" width="194" height="4" rx="2" fill="#a06c48"/>
+
+    <!-- Candles -->
+    <rect x="261" y="143" width="15" height="4" rx="2" fill="#c9973a"/>
+    <rect x="264" y="124" width="9" height="20" rx="2" fill="#faf4e8"/>
+    <ellipse class="flame f3" cx="268.5" cy="118" rx="3" ry="5" fill="#ffd166"/>
+    <rect x="434" y="143" width="15" height="4" rx="2" fill="#c9973a"/>
+    <rect x="437" y="124" width="9" height="20" rx="2" fill="#faf4e8"/>
+    <ellipse class="flame" cx="441.5" cy="118" rx="3" ry="5" fill="#ffd166"/>
+
+    <!-- Stockings -->
+    <rect x="277" y="162" width="22" height="10" rx="3" fill="#faf4e8"/>
+    <path d="M279 172H297V196Q297 202 303 204L309 206Q315 209 312 215Q309 220 301 218L287 214Q279 211 279 203Z" fill="#b3302b"/>
+    <rect x="279" y="184" width="18" height="4" fill="#faf4e8" opacity=".9"/>
+    <rect x="412" y="162" width="22" height="10" rx="3" fill="#faf4e8"/>
+    <path d="M414 172H432V196Q432 202 438 204L444 206Q450 209 447 215Q444 220 436 218L422 214Q414 211 414 203Z" fill="#2f6b4a"/>
+    <rect x="414" y="184" width="18" height="4" fill="#faf4e8" opacity=".9"/>
+
+    <!-- Garland -->
+    <path d="M262 152Q308 176 355 152Q402 176 448 152" fill="none" stroke="#2f6b4a" stroke-width="10" stroke-linecap="round"/>
+    <path d="M262 152Q308 176 355 152Q402 176 448 152" fill="none" stroke="#3f8a5f" stroke-width="10" stroke-linecap="round" stroke-dasharray="2 7"/>
+    <g fill="#d93a32">
+      <circle cx="285" cy="161" r="3"/>
+      <circle cx="308" cy="164" r="3"/>
+      <circle cx="331" cy="161" r="3"/>
+      <circle cx="379" cy="161" r="3"/>
+      <circle cx="402" cy="164" r="3"/>
+      <circle cx="425" cy="161" r="3"/>
+    </g>
+    <g fill="#b3302b">
+      <path d="M262 152l-8-6v12zM262 152l8-6v12z"/>
+      <path d="M355 152l-8-6v12zM355 152l8-6v12z"/>
+      <path d="M448 152l-8-6v12zM448 152l8-6v12z"/>
+    </g>
+
+    <!-- Gifts -->
+    <rect x="228" y="262" width="30" height="28" rx="2" fill="#c9973a"/>
+    <rect x="240" y="262" width="6" height="28" fill="#b3302b"/>
+    <rect x="228" y="273" width="30" height="6" fill="#b3302b"/>
+    <ellipse cx="238" cy="258" rx="5" ry="3.5" fill="none" stroke="#b3302b" stroke-width="3"/>
+    <ellipse cx="248" cy="258" rx="5" ry="3.5" fill="none" stroke="#b3302b" stroke-width="3"/>
+    <rect x="250" y="272" width="22" height="18" rx="2" fill="#b3302b"/>
+    <rect x="259" y="272" width="4" height="18" fill="#faf4e8"/>
+    <rect x="250" y="279" width="22" height="4" fill="#faf4e8"/>
+
+    <!-- Santa -->
+    <ellipse cx="166" cy="311" rx="56" ry="6" fill="#000" opacity=".22"/>
+    <g transform="translate(0 12)">
+      <!-- Sack -->
+      <path d="M70 298C60 272 70 250 92 244H106C126 250 134 272 126 298Z" fill="#b08a5a"/>
+      <path d="M86 244L90 228L97 240L102 226L108 240L112 230L114 244Z" fill="#b08a5a"/>
+      <path d="M84 262Q96 272 92 290" fill="none" stroke="#9a764a" stroke-width="2" stroke-linecap="round"/>
+      <rect x="86" y="240" width="28" height="7" rx="3.5" fill="#7d5f3c"/>
+
+      <!-- Boots and trousers -->
+      <rect x="132" y="282" width="31" height="16" rx="7" fill="#231c1a"/>
+      <rect x="169" y="282" width="31" height="16" rx="7" fill="#231c1a"/>
+      <rect x="144" y="260" width="45" height="26" fill="#9c2622"/>
+      <rect x="164.5" y="266" width="4" height="20" fill="#7a1b18"/>
+
+      <!-- Coat -->
+      <path d="M124 262C119 222 128 184 166 178C204 184 213 222 208 262Z" fill="#c3342f"/>
+      <rect x="160" y="190" width="12" height="68" fill="#faf4e8"/>
+      <rect x="123" y="228" width="86" height="12" fill="#231c1a"/>
+      <rect x="156" y="225.5" width="20" height="17" rx="2.5" fill="none" stroke="#d9a441" stroke-width="3"/>
+      <rect x="119" y="254" width="94" height="14" rx="7" fill="#faf4e8"/>
+
+      <!-- Arm holding the sack -->
+      <path d="M136 194Q118 214 120 238" fill="none" stroke="#c3342f" stroke-width="18" stroke-linecap="round"/>
+      <circle cx="120" cy="250" r="9" fill="#2f6b4a"/>
+      <rect x="109" y="234" width="22" height="9" rx="4.5" fill="#faf4e8"/>
+
+      <!-- Waving arm -->
+      <g class="wave">
+        <path d="M196 194Q222 184 226 158" fill="none" stroke="#c3342f" stroke-width="18" stroke-linecap="round"/>
+        <circle cx="227" cy="145" r="9.5" fill="#2f6b4a"/>
+        <ellipse cx="217.5" cy="148" rx="4" ry="5" fill="#2f6b4a"/>
+        <rect x="215" y="152" width="22" height="9" rx="4.5" fill="#faf4e8" transform="rotate(-8 226 156)"/>
+      </g>
+
+      <!-- Head -->
+      <circle cx="145" cy="150" r="5" fill="#eab896"/>
+      <circle cx="187" cy="150" r="5" fill="#eab896"/>
+      <circle cx="166" cy="148" r="21" fill="#f3c9a8"/>
+      <path d="M142 146C139 178 151 202 166 208C181 202 193 178 190 146C184 160 176 166 166 166C156 166 148 160 142 146Z" fill="#fffaf0"/>
+      <path d="M152 182q4 4 8 0M170 186q4 4 8 0M160 196q4 4 8 0" fill="none" stroke="#e9dcc3" stroke-width="2" stroke-linecap="round"/>
+      <path d="M166 158C160 152 150 154 146 160C152 164 160 164 166 160C172 164 180 164 186 160C182 154 172 152 166 158Z" fill="#fffaf0" stroke="#eadfc9"/>
+      <circle cx="166" cy="154" r="5" fill="#e3907f"/>
+      <circle cx="151" cy="152" r="4.5" fill="#e88a80" opacity=".45"/>
+      <circle cx="181" cy="152" r="4.5" fill="#e88a80" opacity=".45"/>
+      <path d="M154 145q4-4.5 8 0M170 145q4-4.5 8 0" fill="none" stroke="#2b211d" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M152 138.5q5-3.5 10-1M170 137.5q5-2.5 10 1" fill="none" stroke="#fffaf0" stroke-width="3.5" stroke-linecap="round"/>
+
+      <!-- Hat -->
+      <path d="M145 126C145 104 160 92 178 94C197 96 209 111 213 130C205 120 197 116 190 118C190 121 189 124 188 126Z" fill="#c3342f"/>
+      <rect x="141" y="121" width="50" height="13" rx="6.5" fill="#faf4e8"/>
+      <circle cx="214" cy="134" r="8" fill="#faf4e8"/>
+    </g>
+  </g>
+</svg>

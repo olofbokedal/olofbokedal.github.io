@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="color-scheme" content="only light">
+  <meta name="theme-color" content="#1b3a2d">
+  <title>Ska vi dela på en tomte i jul?</title>
+  <meta name="description" content="Intresseanmälan för gäster på Maryhill Estate 23–25 december 2026 som vill hyra en tomte tillsammans och dela på kostnaden. Ett privat initiativ av Olof Bokedal.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ska vi dela på en tomte i jul?">
+  <meta property="og:description" content="För gäster på Maryhill Estate 23–25 december 2026. Ett privat initiativ av Olof Bokedal.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <p class="eyebrow"><span class="nowrap"><span aria-hidden="true">✦</span> Maryhill Estate ·</span> <span class="nowrap">23–25 december 2026 <span aria-hidden="true">✦</span></span></p>
+      <h1>Ska vi dela på en tomte?</h1>
+      <p class="tagline">Vi hyr in en tomte tillsammans och delar på kostnaden.</p>
+      <figure class="art">
+        <img src="santa-fireplace.svg" width="480" height="340" alt="Illustration: tomten vinkar bredvid en sprakande brasa med strumpor på spiselkransen.">
+      </figure>
+    </header>
+
+    <main class="card">
+      <section class="intro" aria-label="Om idén">
+        <p class="greeting">Hej!</p>
+        <p>Jag heter <strong>Olof Bokedal</strong> och är, precis som du, gäst på Maryhill Estate över julen den 23–25 december 2026.</p>
+        <p>Det vore härligt om barnen fick träffa en riktig tomte – och det blir både roligare och billigare om vi gör det ihop. <strong>Idén är enkel: vi hyr in en tomte tillsammans och delar på kostnaden.</strong></p>
+        <p>Låter det som något för dig? Anmäl ditt intresse här nedan, så hör jag av mig med mer information om tid, upplägg och kostnad.</p>
+        <p class="contact">Frågor? Mejla mig på <a href="mailto:olof.bokedal@icloud.com">olof.bokedal@icloud.com</a>.</p>
+      </section>
+
+      <aside class="note" aria-label="Bra att veta">
+        <svg class="note-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 10.5v6M12 7.2v.1" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+        <p><strong>Bra att veta:</strong> Det här är ett privat initiativ av Olof Bokedal. Det är inte samordnat med Maryhill Estate och har ingen koppling till Maryhill Estate på något sätt.</p>
+      </aside>
+
+      <div class="divider" aria-hidden="true"><span>✦</span></div>
+
+      <section class="signup" aria-labelledby="signup-title">
+        <h2 id="signup-title">Anmäl intresse</h2>
+        <p class="sub">Det tar en minut. Fält märkta med <span class="req">*</span> är obligatoriska.</p>
+
+        <form id="signup" class="form" novalidate>
+          <div class="field">
+            <label for="name">Namn <span class="req" aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" maxlength="100" required aria-describedby="name-error">
+            <p class="error" id="name-error" hidden></p>
+          </div>
+
+          <fieldset class="field" aria-describedby="contact-hint">
+            <legend>Hur når jag dig? <span class="req" aria-hidden="true">*</span></legend>
+            <p class="hint" id="contact-hint">Fyll i e-post, telefon eller båda.</p>
+            <div class="row">
+              <div>
+                <label class="sublabel" for="email">E-post</label>
+                <input id="email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="120" aria-describedby="contact-error email-error">
+                <p class="error" id="email-error" hidden></p>
+              </div>
+              <div>
+                <label class="sublabel" for="phone">Telefon</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="30" aria-describedby="contact-error phone-error">
+                <p class="error" id="phone-error" hidden></p>
+              </div>
+            </div>
+            <p class="error" id="contact-error" hidden></p>
+          </fieldset>
+
+          <div class="field">
+            <label for="children">Antal barn <span class="opt">(valfritt)</span></label>
+            <p class="hint" id="children-hint">Hjälper mig att planera.</p>
+            <input id="children" name="children" class="narrow" type="number" inputmode="numeric" min="0" max="20" step="1" aria-describedby="children-hint children-error">
+            <p class="error" id="children-error" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="message">Meddelande <span class="opt">(valfritt)</span></label>
+            <textarea id="message" name="message" rows="3" maxlength="500" placeholder="T.ex. önskemål eller frågor"></textarea>
+          </div>
+
+          <div class="field">
+            <label class="check" for="consent">
+              <input id="consent" name="consent" type="checkbox" required aria-describedby="consent-error">
+              <span>Jag godkänner att mina uppgifter skickas till och sparas av Olof Bokedal, att de enbart används för att samordna tomtebesöket och att de raderas efter jul. <span class="req" aria-hidden="true">*</span></span>
+            </label>
+            <p class="error" id="consent-error" hidden></p>
+          </div>
+
+          <button type="submit" class="btn-primary">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            Skicka anmälan
+          </button>
+          <p class="hint center">Knappen öppnar ditt eget e-postprogram med ett färdigt mejl. Inget skickas förrän du själv trycker på Skicka där.</p>
+        </form>
+
+        <div id="sent" class="sent" tabindex="-1" aria-labelledby="sent-title" hidden>
+          <h3 id="sent-title">Nästan klart!</h3>
+          <p>Ditt e-postprogram bör nu öppnas – tryck på <strong>Skicka</strong> där för att slutföra din anmälan.</p>
+          <p class="small">Öppnades inget e-postprogram? Kopiera min adress och mejla dina uppgifter direkt:</p>
+          <div class="copy">
+            <span class="addr">olof.bokedal@icloud.com</span>
+            <button type="button" class="btn-small" data-copy="address">Kopiera adress</button>
+          </div>
+          <div class="actions">
+            <button type="button" class="btn-ghost" data-copy="message">Kopiera färdigt meddelande</button>
+            <button type="button" class="btn-ghost" id="reopen">Öppna e-postprogrammet igen</button>
+          </div>
+          <p class="copied" id="copy-status" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <div class="divider" aria-hidden="true"><span>✦</span></div>
+
+      <section class="privacy" aria-labelledby="privacy-title">
+        <h2 id="privacy-title">Om dina uppgifter</h2>
+        <dl class="facts">
+          <dt>Vad delas?</dt>
+          <dd>Det du fyller i – namn, e-post och/eller telefon, antal barn och ditt meddelande – skickas till Olof Bokedal. Eftersom anmälan skickas från ditt eget e-postprogram ser jag också din avsändaradress.</dd>
+          <dt>Varför?</dt>
+          <dd>Enbart för att samordna tomtebesöket och kunna kontakta dig om det.</dd>
+          <dt>Hur länge?</dt>
+          <dd>Uppgifterna raderas efter jul.</dd>
+          <dt>Radering</dt>
+          <dd>Vill du att dina uppgifter raderas tidigare? Mejla <a href="mailto:olof.bokedal@icloud.com">olof.bokedal@icloud.com</a> så tar jag bort dem.</dd>
+          <dt>Webbplatsen</dt>
+          <dd>Den här sidan lagrar och skickar inga uppgifter och använder inga cookies. Din anmälan når mig först när du själv trycker på Skicka i ditt e-postprogram.</dd>
+        </dl>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <span class="gj">God jul!</span>
+      Ett privat initiativ av Olof Bokedal · Ingen koppling till Maryhill Estate
+    </footer>
+  </div>
+</body>
+</html>
